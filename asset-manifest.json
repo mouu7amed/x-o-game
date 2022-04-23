@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/x-o-game/static/js/main.d1e4bb37.js",
+    "static/js/787.53c1e3c4.chunk.js": "/x-o-game/static/js/787.53c1e3c4.chunk.js",
+    "index.html": "/x-o-game/index.html",
+    "main.d1e4bb37.js.map": "/x-o-game/static/js/main.d1e4bb37.js.map",
+    "787.53c1e3c4.chunk.js.map": "/x-o-game/static/js/787.53c1e3c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d1e4bb37.js"
+  ]
+}
