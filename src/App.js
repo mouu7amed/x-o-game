@@ -51,9 +51,12 @@ const reducer = (state, action) => {
       if (state.winningPlayer || playedArea) {
         return state;
       }
+
+      //gameBoard
       const gameBoard = [...state.gameBoard];
       gameBoard[x_id] = state.playerMark;
 
+      //winner
       let winningPlayer = state.winningPlayer;
       const haveWinningState = winningStates.some((state) => {
         const [x_id1, x_id2, x_id3] = state;
@@ -67,7 +70,11 @@ const reducer = (state, action) => {
         }
         return false;
       });
+
+      //gameOver
       const gameOver = haveWinningState || gameBoard.every((mark) => !!mark);
+
+      //PlayerMark
       const playerMark = state.playerMark === x ? o : x;
       return {
         gameBoard,
